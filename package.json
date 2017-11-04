@@ -1,0 +1,35 @@
+{
+  "name": "watchmystock",
+  "version": "1.0.1",
+  "description": "A portal for viewing the trending of stocks.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beastoso/watchmystock"
+  },
+  "homepage": "http://beastoso-watchmystock.herokuapp.com/",
+  "bugs": "https://github.com/beastoso/watchmystock/issues",
+  "keywords": [
+    "MongoDB",
+    "Mongoose",
+    "full stack",
+    "Express",
+    "Node",
+    "javascript",
+    "websocket"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Simon Carter",
+  "license": "GNU",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "dotenv": "^1.2.0",
+    "express": "^4.12.4",
+    "mongoose": "^4.1.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "socket.io": "^2.0.4"
+  }
+}

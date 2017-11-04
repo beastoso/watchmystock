@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Watchmystock - See that trend, and watch it</title>
+		
+		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="container">
+			<p class="title-text"><i class="fa fa-binoculars"></i> Watch my stock <i class="fa fa-line-chart"></i></p>
+	
+			<p>
+				<img id="placeholder" src="/public/img/placeholder-graph.png" />
+				<div id="loading"><img src="/public/img/loading-icon.gif"><span>Loading...</span></div>
+				<div id="chart_div" style="display:none;"></div>
+			</p>
+			<p>
+				<h2>Currently watching:</h2>
+				<div id="currentList">
+					<div id="dummyStock" class="stock" style="display:none;"><span class="symbol"></span> : <span class="name"></span><i class="remove fa fa-window-close"></i></div>
+				</div>
+			</p>
+			<br/>
+			<p>
+				<h2>Add another stock to watch list:</h2><br/>
+				<div id="addDiv">
+					<select id="list"><option>Select a stock</option></select>
+					<button id="addBtn" class="btn accept">Add <i class="fa fa-plus-o"></i></button>
+				</div>
+			</p>
+		</div>
+	  				
+	  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+		<script type="text/javascript" src="common/ajax-functions.js"></script>
+	  	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript" src="controllers/indexController.client.js"></script>
+	</body>
+	
+	<footer>
+		Powered by <a href="https://www.alphadvantage.co/">AlphaAdvantage</a>
+	</footer>
+
+</html>
